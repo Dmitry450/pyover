@@ -1,0 +1,7 @@
+# PyPI files
+build/
+dist/
+pyoverloader.egg-info/
+
+# Pycache files
+*.pyc

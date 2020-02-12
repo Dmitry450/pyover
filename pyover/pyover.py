@@ -11,7 +11,7 @@ class Foo:
     def bar(self, x):
         print(x**2)
     
-    @bar.overload(This, str)
+    @bar.overload(This, str) # Don't forget 'bar.'!!!
     def bar(self, x):
         print(x + x)
     
@@ -30,6 +30,8 @@ obj.bar('egg') # eggegg
 spam(3, 2) # 1
 spam('3', 2) # 3 - 2 
 """
+
+__all__ = ["This", "TODOError", "overload", "overloading"]
 
 import types
 

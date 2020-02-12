@@ -1,8 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='pyover',
-    version='1.0.0',
+    name='pyoverloader',
+    description="Another python overloading library",
+    version='1.0.2',
     packages=find_packages(),
     author='/in/dev/',
     author_email='bdmitry450@gmail.com',
